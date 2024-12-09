@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Passionssite</title>
+    <!-- skrives så den ikke indekseres af søgemaskiner -->
+    <meta name="robots" content="noindex" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Merriweather font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Roboto Mono font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Baskervvile font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <img
+        class="logo"
+        src="logo.svg"
+        alt="logo med 4 små blå firkanter"
+        height="50px"
+        width="50px"
+      />
+      <div class="sidens_navn">VILD MED VIN</div>
+      <a class="menu" href="http://">menu</a>
+    </header>
+    <!-- sæt hero section udenfor main, da den er "ligegyldig" hvis du er blind -->
+    <section class="hero_section">
+      <script
+        src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+        type="module"
+      ></script>
+      <dotlottie-player
+        class="lottiefile"
+        src="https://lottie.host/ef48454f-a775-419f-b510-a310ce88b40f/VNV21ljaKo.lottie"
+        background="transparent"
+        speed="1"
+        loop
+        autoplay
+      ></dotlottie-player>
+    </section>
+    <main>
+      <section class="afsnit1">
+        <h1>VILD MED VIN</h1>
+        <h2 class="interview">Interview med Noel Koch-Søfeldt</h2>
+        <p class="brodtekst">
+          Noel, en person med passion for VIN. Her en lille snak om hvor det hele startede, hvorfor
+          naturvin blev sat i fokus og hvordan det (ikke) er, at have nogen at dele sin passion med.
+        </p>
+        <p class="brodtekst2">
+          Til dagligt er han restaurent chef hos Noel's på Sigurdsgade. Besøg ham der, og få
+          serveret skøn vin, med verdensklasse service, af en der ved hvad han snakker om.
+        </p>
+        <div class="billede1_box">
+          <img class="billede1" src="redigerede/IMG_4086.jpg" alt="placeholder foto" />
+          <p class="billede_tekst">Noel foran Noel's på Sigurdsgade</p>
+        </div>
+      </section>
+      <h2>billeder</h2>
+      <div class="grid">
+        <img class="billede2" src="redigerede/IMG_4038.jpg" alt="placeholder foto" />
+        <img class="billede3" src="redigerede/IMG_4090.jpg" alt="placeholder foto" />
+        <img class="billede4" src="redigerede/IMG_1681.jpg" alt="placeholder foto" />
+        <img class="billede5" src="redigerede/IMG_4079-2.jpg" alt="placeholder foto" />
+      </div>
+      <h2>videoer</h2>
+      <div class="videoer">
+        <!-- src skal skrives helt ud, når den uploades til github -->
+        <video
+          class="video_med_tags"
+          controls
+          src="https://blaatsofie.com/kea/05_indhold/passionssite/vild med vin.mp4"
+          type="video/mp4"
+        ></video>
+        <div class="youtube_video">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/Oeid-cO5ZmY?si=X7gMUPUvsNN_21yq"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </main>
+    <footer>blaatsofie.com / created by sofie keinicke bastved</footer>
+  </body>
+</html>

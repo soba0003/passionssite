@@ -1,0 +1,290 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0px 0px;
+}
+
+/* start på CSS */
+body {
+  background-color: rgb(127, 255, 212);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+  object-fit: contain;
+  margin: 5px;
+}
+
+.sidens_navn {
+  font-family: "Merriweather", serif;
+  color: #0024da;
+  place-self: center;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.menu {
+  font-family: "Merriweather", serif;
+  color: #0024da;
+  place-self: center;
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin: 5px;
+  text-decoration: none;
+}
+
+.hero_section {
+  width: 100%;
+  height: 30vh;
+  background-size: cover;
+  background-color: black;
+  /* margin, auto = gør den automatisk bliver centreret, uden grid/flex */
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-family: "Merriweather", serif;
+  font-size: 11cqw;
+  margin: 10px 20px 10px 20px;
+  color: #0024da;
+}
+
+.interview {
+  background-color: white;
+  height: 30px;
+}
+
+h2 {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  font-size: 4.63cqw;
+  font-style: italic;
+  margin: 10px 20px 10px 20px;
+  color: #0024da;
+}
+
+p {
+  font-family: "Baskervvile", serif;
+  font-size: 1.1rem;
+  margin: 20px 20px 10px 20px;
+  color: #0024da;
+}
+
+.billede1_box {
+  padding: 10px;
+  display: grid;
+}
+
+.billede1 {
+  grid-column: 1;
+  grid-row: 1;
+  max-height: 400px;
+  margin: auto;
+  object-fit: contain;
+}
+
+.billede_tekst {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  font-size: 3cqw;
+  grid-column: 1;
+  grid-row: 1;
+  place-self: end center;
+  background-color: white;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2;
+  padding: 10px;
+  gap: 5px;
+}
+
+.billede2,
+.billede3,
+.billede4,
+.billede5 {
+  /* billedet bliver kvadratisk */
+  aspect-ratio: 1 / 1;
+  /* cover = gør den fylder kassen ud, uden at strække i billedet */
+  object-fit: cover;
+}
+
+.videoer {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 20px 10px 10px 10px;
+  gap: 10px;
+}
+
+.video_med_tags {
+  grid-row: 1/2;
+  grid-column: 1;
+  max-height: 400px;
+  margin: auto;
+  object-fit: contain;
+}
+
+.youtube_video {
+  grid-row: 2/3;
+  grid-column: 1;
+}
+
+iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 8/5;
+}
+
+footer {
+  font-family: "Merriweather", serif;
+  color: #0024da;
+  place-self: start;
+  font-size: 0.8rem;
+  margin-top: 40px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+@media (min-width: 870px) {
+  body {
+    display: grid;
+  }
+
+  .hero_section {
+    height: 95vh;
+    margin-bottom: 100px;
+  }
+
+  main {
+    place-self: center;
+    max-width: 1000px;
+  }
+
+  .afsnit1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 160px 40px 190px;
+  }
+
+  h1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-size: 3.3rem;
+    margin: 10px 20px 0px 20px;
+  }
+
+  .interview {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    font-size: 1.3rem;
+    margin: -70px 20px 0px 20px;
+    background-color: white;
+    height: 30px;
+  }
+
+  .brodtekst {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    font-size: 1.2rem;
+    margin: -40px 20px 0px 20px;
+  }
+
+  .brodtekst2 {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    font-size: 1.2rem;
+    margin: -140px 20px 0px 20px;
+  }
+
+  .billede1_box {
+    grid-column: 2/3;
+    grid-row: 1/5;
+  }
+
+  .billede1 {
+    max-height: 400px;
+    width: auto;
+    margin: auto;
+  }
+
+  .billede_tekst {
+    font-size: 1.2rem;
+  }
+
+  .grid {
+    padding: 10px;
+    gap: 20px;
+  }
+
+  .videoer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px 10px 10px 10px;
+    gap: 10px;
+  }
+
+  .video_med_tags {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    max-height: 400px;
+    margin: auto;
+    object-fit: contain;
+  }
+
+  .youtube_video {
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
+
+  /* 
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 400px 400px;
+    padding: 10px;
+    gap: 20px;
+  }
+
+
+
+  .billede2 {
+    hight:100% - den her over rouler aspect ratio fra før
+    grid-column: 1/2;
+    grid-row: 1/3;
+    opbject-fit cover?
+  }
+
+  .billede3 {
+    aspect-ratio: auto;
+    grid-column: 2/4;
+    grid-row: 1/2;
+  }
+
+  .billede4 {
+    aspect-ratio: 3/4;
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  .billede5 {
+    aspect-ratio: auto;
+    grid-column: 3/4;
+    grid-row: 2/3;
+  } */
+}
